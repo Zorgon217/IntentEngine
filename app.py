@@ -81,7 +81,7 @@ def execute_market_search(sector, attributes):
     # 3. Initial API call with domain restrictions (Simulated DB)
     response = tavily_client.search(
         search_query, 
-        max_results=3, 
+        max_results=8, 
         include_raw_content=False,
         include_domains=allowed_domains
     )
@@ -112,11 +112,11 @@ st.markdown(
     <style>
     .main-title {
         text-align: center;
-        padding-top: 20px;
+        padding-top: 10px;
         padding-bottom: 20px;
     }
     </style>
-    <h1 class="main-title">Dynamic Extraction & Action Engine (SA PoC)</h1>
+    <h1 class="main-title">Dynamic Extraction & Action Engine (Aided PoC)</h1>
     """,
     unsafe_allow_html=True
 )
